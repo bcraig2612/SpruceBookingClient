@@ -1,0 +1,60 @@
+#headerContainer {
+    padding-bottom: 6px;
+}
+
+#topAppBar {
+    height: 44px;
+    background-color: #FFFFFF;
+}
+
+#bottomAppBar {
+    height: 44px;
+    background-color: #D8D8D8;
+}
+
+#topToolBar,
+#bottomToolBar {
+    min-height: 44px;
+}
+
+#topToolBar {
+    padding: 0px 10px;
+}
+
+#bottomToolBar {
+    padding: 0px 12px;
+    justify-content: space-between;
+}
+
+#bottomToolBarTitle {
+    color: #404040;
+    letter-spacing: 1px;
+}
+
+#createBookingBtnHeader {
+    background: #F29648;
+    color: #404040;
+    text-transform: none;
+    padding: 3px 11px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#createBookingBtnForm {
+    background: #F29648;
+    color: #404040;
+    text-transform: none;
+    padding: 5px 13px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#createBookingBtnForm:disabled,
+#createBookingBtnForm[disabled]{
+    background: #E0E0E0;
+    color: #626262;
+}
+
+#tableContainer {
+    padding: 0px 12px;
+}
