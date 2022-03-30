@@ -87,13 +87,13 @@ function App() {
   const [bookings, setBookings] = useState([]);
 
   useEffect(() => {
-    Axios.get("https://spruce-booking.herokuapp.com/api/getBookings").then((response) => {
+    Axios.get("/api/getBookings").then((response) => {
       setBookings(response.data);
     })
   }, [bookings])
 
   const submitBooking = () => {
-    Axios.post("https://spruce-booking.herokuapp.com/api/createBooking", {
+    Axios.post("/api/createBooking", {
       customerName: customerName,
       emailAddress: emailAddress,
       streetAddress: streetAddress,
