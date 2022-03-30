@@ -132,9 +132,9 @@ function App() {
                   <CardHeader title="Create Booking" sx={{ color: "#404040" }}></CardHeader>
                   <Box className="form">
                     <CardContent>
-                      <Grid item container spacing={2} justify="center">
+                      <Grid item container spacing={1} justify="center">
                         <Grid item xs={12} sm={12} md={6}>
-                        <TextField fullWidth id="outlined-name" label="Name" variant="outlined" onChange={(e) => { setCustomerName(e.target.value); }} InputProps={{ startAdornment: <InputAdornment position="start">&nbsp;</InputAdornment> }} />
+                        <TextField fullWidth id="outlined-name" label="Name" variant="outlined" helperText="&nbsp;" onChange={(e) => { setCustomerName(e.target.value); }} InputProps={{ startAdornment: <InputAdornment position="start">&nbsp;</InputAdornment> }} />
                         </Grid>
                         <Grid item xs={12} sm={12} md={6}>
                           <FormControl fullWidth>
@@ -149,16 +149,16 @@ function App() {
                           <TextField fullWidth id="outlined-email" label="Email" variant="outlined" onChange={(e) => { setEmailAddress(e.target.value); }} InputProps={{ startAdornment: <InputAdornment position="start">&nbsp;</InputAdornment> }} />
                         </Grid>
                         <Grid item xs={12} sm={12} md={6}>
-                          <TextField fullWidth id="outlined-booking-date" label="Booking Date" variant="outlined" onChange={(e) => { setBookingDate(e.target.value); }} InputProps={{ startAdornment: <InputAdornment position="start">&nbsp;</InputAdornment> }} />
+                          <TextField fullWidth id="outlined-booking-date" label="Booking Date" variant="outlined" helperText="Correct Format: YYYY-MM-DD" onChange={(e) => { setBookingDate(e.target.value); }} InputProps={{ startAdornment: <InputAdornment position="start">&nbsp;</InputAdornment> }} />
                         </Grid>
                         <Grid item xs={12} sm={12} md={6}>
                           <TextField fullWidth id="outlined-street-address" label="Street Address" variant="outlined" onChange={(e) => { setStreetAddress(e.target.value); }} InputProps={{ startAdornment: <InputAdornment position="start">&nbsp;</InputAdornment> }} />
                         </Grid>
                         <Grid item xs={12} sm={12} md={6}>
-                          <TextField fullWidth id="outlined-booking-time" label="Booking Time" variant="outlined" onChange={(e) => { setBookingTime(e.target.value); }} InputProps={{ startAdornment: <InputAdornment position="start">&nbsp;</InputAdornment> }} />
+                          <TextField fullWidth id="outlined-booking-time" label="Booking Time" variant="outlined" helperText="Correct Format: HH:MM:SS" onChange={(e) => { setBookingTime(e.target.value); }} InputProps={{ startAdornment: <InputAdornment position="start">&nbsp;</InputAdornment> }} />
                         </Grid>
                         <Grid item xs={12} sm={12} md={6}>
-                          <TextField fullWidth id="outlined-city" label="City" variant="outlined" onChange={(e) => { setCity(e.target.value); }} InputProps={{ startAdornment: <InputAdornment position="start">&nbsp;</InputAdornment> }} />
+                          <TextField fullWidth id="outlined-city" label="City" variant="outlined" helperText="&nbsp;" onChange={(e) => { setCity(e.target.value); }} InputProps={{ startAdornment: <InputAdornment position="start">&nbsp;</InputAdornment> }} />
                         </Grid>
                         <Grid item xs={12} sm={12} md={6}></Grid>
                         <Grid item xs={12} sm={12} md={3}>
